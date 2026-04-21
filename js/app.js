@@ -92,7 +92,7 @@ function renderStep(index) {
   $("#stepHint").textContent =
     index === steps.length - 1
       ? "Thumbs up to finish."
-      : "Swipe right for next · Swipe left to go back";
+      : "Swipe left for next · Swipe right to go back";
 
   // Progress dots
   const dots = steps
@@ -188,9 +188,9 @@ function handleThumbsUp() {
   }
 }
 
-function handleSwipeRight() {
+function handleSwipeLeft() {
   const v = state.view;
-  if (v === "tutorial-swipe-right") {
+  if (v === "tutorial-swipe-left") {
     advanceTutorial(tutorialSteps[state.tutorialIndex].success);
   } else if (v === "step" && state.currentStep < steps.length - 1) {
     renderStep(state.currentStep + 1);
@@ -199,9 +199,9 @@ function handleSwipeRight() {
   }
 }
 
-function handleSwipeLeft() {
+function handleSwipeRight() {
   const v = state.view;
-  if (v === "tutorial-swipe-left") {
+  if (v === "tutorial-swipe-right") {
     advanceTutorial(tutorialSteps[state.tutorialIndex].success);
   } else if (v === "step" && state.currentStep > 0) {
     renderStep(state.currentStep - 1);
@@ -287,8 +287,8 @@ function init() {
   setView("tutorial-intro");
   // Keyboard fallback (also useful when testing without camera)
   window.addEventListener("keydown", (e) => {
-    if (e.key === "ArrowRight") handleSwipeRight();
-    else if (e.key === "ArrowLeft") handleSwipeLeft();
+    if (e.key === "ArrowLeft") handleSwipeLeft();
+    else if (e.key === "ArrowRight") handleSwipeRight();
     else if (e.key === "Enter" || e.key === " ") handleThumbsUp();
     else if (e.key === "p" || e.key === "P") handleOpenPalm();
   });

@@ -11,14 +11,14 @@ export const tutorialSteps = [
     success: "Nice — that's a thumbs up.",
   },
   {
-    view: "tutorial-swipe-right",
-    gesture: "swiperight",
-    success: "That's a swipe right.",
-  },
-  {
     view: "tutorial-swipe-left",
     gesture: "swipeleft",
     success: "That's a swipe left.",
+  },
+  {
+    view: "tutorial-swipe-right",
+    gesture: "swiperight",
+    success: "That's a swipe right.",
   },
   {
     view: "tutorial-open-palm",

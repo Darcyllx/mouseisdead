@@ -15,6 +15,17 @@ const SWIPE_WINDOW_MS = 500;
 const SWIPE_THRESHOLD = 0.18;
 const HISTORY_MAX = 30;
 
+// Consecutive frames required before firing each named gesture. Open_Palm
+// needs many more frames than Thumb_Up because mid-swipe the classifier
+// frequently flickers to Open_Palm for a handful of frames.
+const FRAME_REQ = { Thumb_Up: 3, Open_Palm: 12 };
+const FRAME_REQ_DEFAULT = 3;
+
+// Open_Palm-specific guards to avoid false pauses during a swipe.
+const OPEN_PALM_STATIONARY_WINDOW_MS = 300;
+const OPEN_PALM_STATIONARY_MAX_DX = 0.05; // normalized x range
+const SWIPE_TO_PALM_LOCKOUT_MS = 1000;
+
 class GestureEngine extends EventTarget {
   constructor() {
     super();
@@ -24,6 +35,7 @@ class GestureEngine extends EventTarget {
     this.running = false;
     this.lastGestureTime = 0;
     this.lastSwipeTime = 0;
+    this.lastSwipeFireTime = 0;
     this.lastGestureName = null;
     this.gestureFrameCount = 0;
     this.paused = false;
@@ -137,7 +149,8 @@ class GestureEngine extends EventTarget {
         this.gestureFrameCount = 1;
       }
 
-      if (this.gestureFrameCount === 3) {
+      const required = FRAME_REQ[name] || FRAME_REQ_DEFAULT;
+      if (this.gestureFrameCount === required) {
         this._fireGesture(name, now);
       }
     } else {
@@ -150,6 +163,17 @@ class GestureEngine extends EventTarget {
     if (now - this.lastGestureTime < GESTURE_COOLDOWN_MS) return;
 
     if (name === "Open_Palm") {
+      // Reject if a swipe just fired — the classifier often flickers to
+      // Open_Palm at the tail end of a swipe.
+      if (now - this.lastSwipeFireTime < SWIPE_TO_PALM_LOCKOUT_MS) {
+        this.gestureFrameCount = 0;
+        return;
+      }
+      // Reject if the hand is still moving horizontally.
+      if (!this._isHandStationary(now)) {
+        this.gestureFrameCount = 0;
+        return;
+      }
       // Open palm is always allowed — it's the pause/resume toggle
       this.lastGestureTime = now;
       this.dispatchEvent(new CustomEvent("openpalm"));
@@ -163,6 +187,20 @@ class GestureEngine extends EventTarget {
       this.lastGestureTime = now;
       this.dispatchEvent(new CustomEvent("thumbsup"));
     }
+  }
+
+  _isHandStationary(now) {
+    const recent = this.xHistory.filter(
+      (p) => now - p.t <= OPEN_PALM_STATIONARY_WINDOW_MS,
+    );
+    if (recent.length < 2) return true;
+    let min = Infinity;
+    let max = -Infinity;
+    for (const p of recent) {
+      if (p.x < min) min = p.x;
+      if (p.x > max) max = p.x;
+    }
+    return max - min <= OPEN_PALM_STATIONARY_MAX_DX;
   }
 
   _detectSwipe(now) {
@@ -182,10 +220,14 @@ class GestureEngine extends EventTarget {
     // the frame). Preserve the prototype mapping.
     if (dist > SWIPE_THRESHOLD) {
       this.lastSwipeTime = now;
+      this.lastSwipeFireTime = now;
+      this.gestureFrameCount = 0;
       this.xHistory = [];
       this.dispatchEvent(new CustomEvent("swiperight"));
     } else if (dist < -SWIPE_THRESHOLD) {
       this.lastSwipeTime = now;
+      this.lastSwipeFireTime = now;
+      this.gestureFrameCount = 0;
       this.xHistory = [];
       this.dispatchEvent(new CustomEvent("swipeleft"));
     }
