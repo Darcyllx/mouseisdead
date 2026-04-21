@@ -236,11 +236,14 @@ export const stepSvgs = {
 
 export const gestureIconSvgs = {
   thumbsup:
-    '<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 18h10a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2h-4l1-4a2 2 0 0 0-2-2.5a2 2 0 0 0-2 1.5l-3 7v6z"/><rect x="6" y="16" width="6" height="10" rx="1"/></svg>',
+    '<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 13h4l2.5-6.5a2.5 2.5 0 0 1 4.5 1.5V12h6a3 3 0 0 1 3 3c0 1.5-1 4-2 7s-4 5-7 5h-7V13z"/><rect x="3" y="13" width="4" height="12" rx="1"/></svg>',
+  
   "swipe-right":
-    '<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 22v-10a2 2 0 0 1 4 0v3v-6a2 2 0 0 1 4 0v6v-4a2 2 0 0 1 4 0v4v-1a2 2 0 0 1 4 0v7a6 6 0 0 1-6 6h-4a6 6 0 0 1-6-6z"/><path d="M4 16h6M7 13l3 3-3 3"/></svg>',
+    '<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 24v-8a2 2 0 0 1 4 0v2v-6a2 2 0 0 1 4 0v6v-4a2 2 0 0 1 4 0v4v-1a2 2 0 0 1 4 0v5a6 6 0 0 1-6 6h-4a6 6 0 0 1-6-6z"/><path d="M2 14h6M5 11l3 3-3 3"/></svg>',
+  
   "swipe-left":
-    '<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 22v-10a2 2 0 0 0-4 0v3v-6a2 2 0 0 0-4 0v6v-4a2 2 0 0 0-4 0v4v-1a2 2 0 0 0-4 0v7a6 6 0 0 0 6 6h4a6 6 0 0 0 6-6z"/><path d="M28 16h-6M25 13l-3 3 3 3"/></svg>',
+    '<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 24v-8a2 2 0 0 0-4 0v2v-6a2 2 0 0 0-4 0v6v-4a2 2 0 0 0-4 0v4v-1a2 2 0 0 0-4 0v5a6 6 0 0 0 6 6h4a6 6 0 0 0 6-6z"/><path d="M30 14h-6M27 11l-3 3 3 3"/></svg>',
+  
   openpalm:
-    '<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 26v-6M8 20v-8a2 2 0 0 1 4 0v6v-10a2 2 0 0 1 4 0v10v-11a2 2 0 0 1 4 0v11v-9a2 2 0 0 1 4 0v9v-6a2 2 0 0 1 4 0v11a6 6 0 0 1-6 6h-8a6 6 0 0 1-6-6z"/></svg>',
+    '<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17.5L10 12a2 2 0 0 1 3.5 1.5v4.5v-8a2 2 0 0 1 4 0v8v-9a2 2 0 0 1 4 0v9v-7a2 2 0 0 1 4 0v7a2 2 0 0 1 4 0v6a8 8 0 0 1-8 8h-7a8 8 0 0 1-8-8v-3z"/></svg>',
 };
