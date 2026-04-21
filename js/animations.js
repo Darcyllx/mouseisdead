@@ -236,14 +236,11 @@ export const stepSvgs = {
 
 export const gestureIconSvgs = {
   thumbsup:
-    '<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 14l3.2-6.8A2.1 2.1 0 0 1 18.1 6c1.3 0 2.2 1.2 1.9 2.5L19 14h5.2A2.8 2.8 0 0 1 27 16.8v1.1a4 4 0 0 1-.3 1.5l-1.6 4a3 3 0 0 1-2.8 1.9H13"/><rect x="6" y="13" width="7" height="13" rx="2"/></svg>',
-
+    '<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 18h10a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2h-4l1-4a2 2 0 0 0-2-2.5a2 2 0 0 0-2 1.5l-3 7v6z"/><rect x="6" y="16" width="6" height="10" rx="1"/></svg>',
   "swipe-right":
-    '<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 18v-3a2 2 0 0 1 4 0v2"/><path d="M12 17V9a2 2 0 0 1 4 0v8"/><path d="M16 17v-2a2 2 0 0 1 4 0v2"/><path d="M20 17v-1a2 2 0 0 1 4 0v6a6 6 0 0 1-6 6h-3a7 7 0 0 1-7-7v-3"/><path d="M4 10h8"/><path d="M9 7l3 3-3 3"/></svg>',
-
+    '<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 22v-10a2 2 0 0 1 4 0v3v-6a2 2 0 0 1 4 0v6v-4a2 2 0 0 1 4 0v4v-1a2 2 0 0 1 4 0v7a6 6 0 0 1-6 6h-4a6 6 0 0 1-6-6z"/><path d="M4 16h6M7 13l3 3-3 3"/></svg>',
   "swipe-left":
-    '<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 18v-3a2 2 0 0 0-4 0v2"/><path d="M20 17V9a2 2 0 0 0-4 0v8"/><path d="M16 17v-2a2 2 0 0 0-4 0v2"/><path d="M12 17v-1a2 2 0 0 0-4 0v6a6 6 0 0 0 6 6h3a7 7 0 0 0 7-7v-3"/><path d="M28 10h-8"/><path d="M23 7l-3 3 3 3"/></svg>',
-
+    '<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 22v-10a2 2 0 0 0-4 0v3v-6a2 2 0 0 0-4 0v6v-4a2 2 0 0 0-4 0v4v-1a2 2 0 0 0-4 0v7a6 6 0 0 0 6 6h4a6 6 0 0 0 6-6z"/><path d="M28 16h-6M25 13l-3 3 3 3"/></svg>',
   openpalm:
-    '<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 27v-9a2 2 0 0 1 4 0"/><path d="M14 18V8a2 2 0 0 1 4 0v10"/><path d="M18 18V7a2 2 0 0 1 4 0v11"/><path d="M22 18v-7a2 2 0 0 1 4 0v11a6 6 0 0 1-6 6h-4a8 8 0 0 1-8-8v-2a2 2 0 0 1 4 0v1"/></svg>',
+    '<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 26v-6M8 20v-8a2 2 0 0 1 4 0v6v-10a2 2 0 0 1 4 0v10v-11a2 2 0 0 1 4 0v11v-9a2 2 0 0 1 4 0v9v-6a2 2 0 0 1 4 0v11a6 6 0 0 1-6 6h-8a6 6 0 0 1-6-6z"/></svg>',
 };
