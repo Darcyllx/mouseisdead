@@ -245,5 +245,5 @@ export const gestureIconSvgs = {
     '<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 24v-8a2 2 0 0 0-4 0v2v-6a2 2 0 0 0-4 0v6v-4a2 2 0 0 0-4 0v4v-1a2 2 0 0 0-4 0v5a6 6 0 0 0 6 6h4a6 6 0 0 0 6-6z"/><path d="M30 14h-6M27 11l-3 3 3 3"/></svg>',
   
   openpalm:
-    '<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17.5L10 12a2 2 0 0 1 3.5 1.5v4.5v-8a2 2 0 0 1 4 0v8v-9a2 2 0 0 1 4 0v9v-7a2 2 0 0 1 4 0v7a2 2 0 0 1 4 0v6a8 8 0 0 1-8 8h-7a8 8 0 0 1-8-8v-3z"/></svg>',
+    '<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 15.5L10 10a2 2 0 0 1 3.5 1.5v4.5v-8a2 2 0 0 1 4 0v8v-9a2 2 0 0 1 4 0v9v-7a2 2 0 0 1 4 0v7a2 2 0 0 1 4 0v6a8 8 0 0 1-8 8h-7a8 8 0 0 1-8-8v-3z"/></svg>',
 };
