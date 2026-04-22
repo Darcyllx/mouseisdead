@@ -27,8 +27,8 @@ export const gestureSvgs = {
         <path d="M10 24v-8a2 2 0 0 1 4 0v2v-6a2 2 0 0 1 4 0v6v-8a2 2 0 0 1 4 0v8v-6a2 2 0 0 1 4 0v6v-1a2 2 0 0 1 4 0v5a6 6 0 0 1-6 6h-8a6 6 0 0 1-6-6z" vector-effect="non-scaling-stroke"/>
       </g>
       <g class="anim-swipe-arrow">
-        <path d="M40 100 h70" class="accent" stroke-width="3" vector-effect="non-scaling-stroke" />
-        <path d="M100 90 l12 10 -12 10" class="accent" stroke-width="3" vector-effect="non-scaling-stroke" />
+        <path d="M40 100 h70" class="accent" stroke-width="4" vector-effect="non-scaling-stroke" />
+        <path d="M100 90 l12 10 -12 10" class="accent" stroke-width="4" vector-effect="non-scaling-stroke" />
       </g>
     </svg>`,
 
@@ -38,8 +38,8 @@ export const gestureSvgs = {
         <path d="M22 24v-8a2 2 0 0 0-4 0v2v-6a2 2 0 0 0-4 0v6v-8a2 2 0 0 0-4 0v8v-6a2 2 0 0 0-4 0v6v-1a2 2 0 0 0-4 0v5a6 6 0 0 0 6 6h8a6 6 0 0 0 6-6z" vector-effect="non-scaling-stroke"/>
       </g>
       <g class="anim-swipe-arrow anim-swipe-arrow--reverse">
-        <path d="M160 100 h-70" class="accent" stroke-width="3" vector-effect="non-scaling-stroke" />
-        <path d="M100 90 l-12 10 12 10" class="accent" stroke-width="3" vector-effect="non-scaling-stroke" />
+        <path d="M160 100 h-70" class="accent" stroke-width="4" vector-effect="non-scaling-stroke" />
+        <path d="M100 90 l-12 10 12 10" class="accent" stroke-width="4" vector-effect="non-scaling-stroke" />
       </g>
     </svg>`,
 
