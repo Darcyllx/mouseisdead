@@ -545,6 +545,10 @@ main#app {
   height: auto;
   max-height: 100%;
 }
+.tutorial-hand {
+  color: #4a4740;
+  stroke-width: 3;
+}
 
 /* Thumb up pulse */
 .anim-thumb {

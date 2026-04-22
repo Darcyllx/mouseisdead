@@ -13,7 +13,7 @@ const COMMON_ATTRS =
 export const gestureSvgs = {
   thumbsup: `
     <svg class="gesture-illustration-svg" ${COMMON_ATTRS}>
-      <g class="anim-thumb">
+      <g class="anim-thumb tutorial-hand">
         <g transform="translate(30 30) scale(4.375)">
           <path d="M7 13h4l2.5-6.5a2.5 2.5 0 0 1 4.5 1.5V12h6a3 3 0 0 1 3 3c0 1.5-1 4-2 7s-4 5-7 5h-7V13z" vector-effect="non-scaling-stroke"/>
           <rect x="3" y="13" width="4" height="12" rx="1" vector-effect="non-scaling-stroke"/>
@@ -23,7 +23,7 @@ export const gestureSvgs = {
 
   "swipe-right": `
     <svg class="gesture-illustration-svg" ${COMMON_ATTRS}>
-      <g transform="translate(30 30) scale(4.375)">
+      <g class="tutorial-hand" transform="translate(30 30) scale(4.375)">
         <path d="M14 24v-8a2 2 0 0 1 4 0v2v-6a2 2 0 0 1 4 0v6v-4a2 2 0 0 1 4 0v4v-1a2 2 0 0 1 4 0v5a6 6 0 0 1-6 6h-4a6 6 0 0 1-6-6z" vector-effect="non-scaling-stroke"/>
       </g>
       <g class="anim-swipe-arrow">
@@ -34,7 +34,7 @@ export const gestureSvgs = {
 
   "swipe-left": `
     <svg class="gesture-illustration-svg" ${COMMON_ATTRS}>
-      <g transform="translate(30 30) scale(4.375)">
+      <g class="tutorial-hand" transform="translate(30 30) scale(4.375)">
         <path d="M18 24v-8a2 2 0 0 0-4 0v2v-6a2 2 0 0 0-4 0v6v-4a2 2 0 0 0-4 0v4v-1a2 2 0 0 0-4 0v5a6 6 0 0 0 6 6h4a6 6 0 0 0 6-6z" vector-effect="non-scaling-stroke"/>
       </g>
       <g class="anim-swipe-arrow anim-swipe-arrow--reverse">
@@ -45,7 +45,7 @@ export const gestureSvgs = {
 
   openpalm: `
     <svg class="gesture-illustration-svg" ${COMMON_ATTRS}>
-      <g class="anim-palm">
+      <g class="anim-palm tutorial-hand">
         <g transform="translate(30 30) scale(4.375)">
           <path d="M6 22v-10a2 2 0 0 1 4 0v2v-6a2 2 0 0 1 4 0v6v-8a2 2 0 0 1 4 0v8v-6a2 2 0 0 1 4 0v6v-2a2 2 0 0 1 4 0v10a4 4 0 0 1-4 4h-12a4 4 0 0 1-4-4z" vector-effect="non-scaling-stroke"/>
         </g>
