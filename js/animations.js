@@ -14,24 +14,17 @@ export const gestureSvgs = {
   thumbsup: `
     <svg class="gesture-illustration-svg" ${COMMON_ATTRS}>
       <g class="anim-thumb">
-        <path d="M70 120 h48 a8 8 0 0 0 8 -8 v-26 a8 8 0 0 0 -8 -8 h-18
-                 l4 -18 a8 8 0 0 0 -8 -10 a8 8 0 0 0 -8 6 l-8 22
-                 l-10 0 z" />
-        <rect x="52" y="112" width="22" height="40" rx="4" />
-        <path d="M74 140 h44" class="muted" opacity="0.4" />
+        <g transform="translate(30 30) scale(4.375)">
+          <path d="M7 13h4l2.5-6.5a2.5 2.5 0 0 1 4.5 1.5V12h6a3 3 0 0 1 3 3c0 1.5-1 4-2 7s-4 5-7 5h-7V13z" vector-effect="non-scaling-stroke"/>
+          <rect x="3" y="13" width="4" height="12" rx="1" vector-effect="non-scaling-stroke"/>
+        </g>
       </g>
     </svg>`,
 
   "swipe-right": `
     <svg class="gesture-illustration-svg" ${COMMON_ATTRS}>
-      <g>
-        <path d="M70 85
-                 q0 -10 8 -10 q8 0 8 10 v30
-                 q0 -8 8 -8 q8 0 8 8 v10
-                 q0 -6 8 -6 q8 0 8 6 v10
-                 q0 -4 7 -4 q7 0 7 4 v16
-                 q0 18 -22 18 h-14 q-22 0 -22 -22 v-40 z" />
-        <circle cx="70" cy="130" r="8" />
+      <g transform="translate(30 30) scale(4.375)">
+        <path d="M14 24v-8a2 2 0 0 1 4 0v2v-6a2 2 0 0 1 4 0v6v-4a2 2 0 0 1 4 0v4v-1a2 2 0 0 1 4 0v5a6 6 0 0 1-6 6h-4a6 6 0 0 1-6-6z" vector-effect="non-scaling-stroke"/>
       </g>
       <g class="anim-swipe-arrow">
         <path d="M40 100 h70" class="accent" stroke-width="3" />
@@ -41,14 +34,8 @@ export const gestureSvgs = {
 
   "swipe-left": `
     <svg class="gesture-illustration-svg" ${COMMON_ATTRS}>
-      <g>
-        <path d="M130 85
-                 q0 -10 -8 -10 q-8 0 -8 10 v30
-                 q0 -8 -8 -8 q-8 0 -8 8 v10
-                 q0 -6 -8 -6 q-8 0 -8 6 v10
-                 q0 -4 -7 -4 q-7 0 -7 4 v16
-                 q0 18 22 18 h14 q22 0 22 -22 v-40 z" />
-        <circle cx="130" cy="130" r="8" />
+      <g transform="translate(30 30) scale(4.375)">
+        <path d="M18 24v-8a2 2 0 0 0-4 0v2v-6a2 2 0 0 0-4 0v6v-4a2 2 0 0 0-4 0v4v-1a2 2 0 0 0-4 0v5a6 6 0 0 0 6 6h4a6 6 0 0 0 6-6z" vector-effect="non-scaling-stroke"/>
       </g>
       <g class="anim-swipe-arrow anim-swipe-arrow--reverse">
         <path d="M160 100 h-70" class="accent" stroke-width="3" />
@@ -59,13 +46,9 @@ export const gestureSvgs = {
   openpalm: `
     <svg class="gesture-illustration-svg" ${COMMON_ATTRS}>
       <g class="anim-palm">
-        <path d="M60 150 v-30
-                 q0 -6 6 -6 q6 0 6 6 v15
-                 v-40 q0 -8 7 -8 q7 0 7 8 v40
-                 v-45 q0 -8 7 -8 q7 0 7 8 v45
-                 v-40 q0 -8 7 -8 q7 0 7 8 v40
-                 v-30 q0 -7 7 -7 q7 0 7 7 v50
-                 q0 20 -20 20 h-22 q-20 0 -20 -20 z" />
+        <g transform="translate(30 30) scale(4.375)">
+          <path d="M6 22v-10a2 2 0 0 1 4 0v2v-6a2 2 0 0 1 4 0v6v-8a2 2 0 0 1 4 0v8v-6a2 2 0 0 1 4 0v6v-2a2 2 0 0 1 4 0v10a4 4 0 0 1-4 4h-12a4 4 0 0 1-4-4z" vector-effect="non-scaling-stroke"/>
+        </g>
       </g>
     </svg>`,
 };
