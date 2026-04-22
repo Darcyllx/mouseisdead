@@ -492,7 +492,7 @@ main#app {
   grid-template-columns: 1fr;
   gap: 10px;
   width: 100%;
-  max-width: 480px;
+  max-width: 560px;
 }
 @media (min-width: 600px) {
   .ingredients-list { grid-template-columns: 1fr 1fr; }
@@ -525,6 +525,8 @@ main#app {
   color: var(--ink-muted);
   font-size: 0.875rem;
   margin-left: auto;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 @keyframes ingredientFadeIn {
   to { opacity: 1; transform: translateY(0); }
