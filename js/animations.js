@@ -24,22 +24,22 @@ export const gestureSvgs = {
   "swipe-right": `
     <svg class="gesture-illustration-svg" ${COMMON_ATTRS}>
       <g class="tutorial-hand" transform="translate(30 30) scale(4.375)">
-        <path d="M14 24v-8a2 2 0 0 1 4 0v2v-6a2 2 0 0 1 4 0v6v-4a2 2 0 0 1 4 0v4v-1a2 2 0 0 1 4 0v5a6 6 0 0 1-6 6h-4a6 6 0 0 1-6-6z" vector-effect="non-scaling-stroke"/>
+        <path d="M10 24v-8a2 2 0 0 1 4 0v2v-6a2 2 0 0 1 4 0v6v-8a2 2 0 0 1 4 0v8v-6a2 2 0 0 1 4 0v6v-1a2 2 0 0 1 4 0v5a6 6 0 0 1-6 6h-8a6 6 0 0 1-6-6z" vector-effect="non-scaling-stroke"/>
       </g>
       <g class="anim-swipe-arrow">
-        <path d="M40 100 h70" class="accent" stroke-width="3" />
-        <path d="M100 90 l12 10 -12 10" class="accent" stroke-width="3" />
+        <path d="M40 100 h70" class="accent" stroke-width="3" vector-effect="non-scaling-stroke" />
+        <path d="M100 90 l12 10 -12 10" class="accent" stroke-width="3" vector-effect="non-scaling-stroke" />
       </g>
     </svg>`,
 
   "swipe-left": `
     <svg class="gesture-illustration-svg" ${COMMON_ATTRS}>
       <g class="tutorial-hand" transform="translate(30 30) scale(4.375)">
-        <path d="M18 24v-8a2 2 0 0 0-4 0v2v-6a2 2 0 0 0-4 0v6v-4a2 2 0 0 0-4 0v4v-1a2 2 0 0 0-4 0v5a6 6 0 0 0 6 6h4a6 6 0 0 0 6-6z" vector-effect="non-scaling-stroke"/>
+        <path d="M22 24v-8a2 2 0 0 0-4 0v2v-6a2 2 0 0 0-4 0v6v-8a2 2 0 0 0-4 0v8v-6a2 2 0 0 0-4 0v6v-1a2 2 0 0 0-4 0v5a6 6 0 0 0 6 6h8a6 6 0 0 0 6-6z" vector-effect="non-scaling-stroke"/>
       </g>
       <g class="anim-swipe-arrow anim-swipe-arrow--reverse">
-        <path d="M160 100 h-70" class="accent" stroke-width="3" />
-        <path d="M100 90 l-12 10 12 10" class="accent" stroke-width="3" />
+        <path d="M160 100 h-70" class="accent" stroke-width="3" vector-effect="non-scaling-stroke" />
+        <path d="M100 90 l-12 10 12 10" class="accent" stroke-width="3" vector-effect="non-scaling-stroke" />
       </g>
     </svg>`,
 
@@ -222,10 +222,10 @@ export const gestureIconSvgs = {
     '<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 13h4l2.5-6.5a2.5 2.5 0 0 1 4.5 1.5V12h6a3 3 0 0 1 3 3c0 1.5-1 4-2 7s-4 5-7 5h-7V13z"/><rect x="3" y="13" width="4" height="12" rx="1"/></svg>',
   
   "swipe-right":
-    '<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 24v-8a2 2 0 0 1 4 0v2v-6a2 2 0 0 1 4 0v6v-4a2 2 0 0 1 4 0v4v-1a2 2 0 0 1 4 0v5a6 6 0 0 1-6 6h-4a6 6 0 0 1-6-6z"/><path d="M2 14h6M5 11l3 3-3 3"/></svg>',
-  
+    '<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 24v-8a2 2 0 0 1 4 0v2v-6a2 2 0 0 1 4 0v6v-8a2 2 0 0 1 4 0v8v-6a2 2 0 0 1 4 0v6v-1a2 2 0 0 1 4 0v5a6 6 0 0 1-6 6h-8a6 6 0 0 1-6-6z"/><path d="M2 14h6M5 11l3 3-3 3"/></svg>',
+
   "swipe-left":
-    '<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 24v-8a2 2 0 0 0-4 0v2v-6a2 2 0 0 0-4 0v6v-4a2 2 0 0 0-4 0v4v-1a2 2 0 0 0-4 0v5a6 6 0 0 0 6 6h4a6 6 0 0 0 6-6z"/><path d="M30 14h-6M27 11l-3 3 3 3"/></svg>',
+    '<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 24v-8a2 2 0 0 0-4 0v2v-6a2 2 0 0 0-4 0v6v-8a2 2 0 0 0-4 0v8v-6a2 2 0 0 0-4 0v6v-1a2 2 0 0 0-4 0v5a6 6 0 0 0 6 6h8a6 6 0 0 0 6-6z"/><path d="M30 14h-6M27 11l-3 3 3 3"/></svg>',
   
   openpalm:
     '<svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22v-10a2 2 0 0 1 4 0v2v-6a2 2 0 0 1 4 0v6v-8a2 2 0 0 1 4 0v8v-6a2 2 0 0 1 4 0v6v-2a2 2 0 0 1 4 0v10a4 4 0 0 1-4 4h-12a4 4 0 0 1-4-4z"/></svg>',
