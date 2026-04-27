@@ -154,15 +154,25 @@ export const stepSvgs = {
   // 7. Wrap and shape into triangle
   7: `
     <svg class="step-svg" ${COMMON_ATTRS}>
-      <!-- wrap corners gathering -->
-      <g class="anim-s7-wrap-corners muted" opacity="0.6">
-        <path d="M40 60 L90 100" />
-        <path d="M160 60 L110 100" />
-        <path d="M40 160 L90 120" />
-        <path d="M160 160 L110 120" />
+      <!-- top-down plastic wrap base -->
+      <rect x="22" y="60" width="156" height="108" rx="7"
+            class="anim-s7-wrap-base muted" opacity="0.3" />
+
+      <!-- gray rice ball and loose rice from top-down view -->
+      <g class="anim-s7-rice-ball muted" opacity="0.65">
+        <ellipse cx="100" cy="120" rx="22" ry="18" stroke-width="2.5" />
+        <ellipse cx="72" cy="98" rx="5" ry="3.5" />
+        <ellipse cx="85" cy="89" rx="5" ry="3.5" />
+        <ellipse cx="131" cy="104" rx="5" ry="3.5" />
+        <ellipse cx="61" cy="129" rx="5" ry="3.5" />
+        <ellipse cx="137" cy="136" rx="5" ry="3.5" />
+        <ellipse cx="82" cy="153" rx="5" ry="3.5" />
+        <ellipse cx="116" cy="160" rx="5" ry="3.5" />
       </g>
-      <!-- triangle onigiri (draw in) -->
-      <path d="M100 70 L150 150 L50 150 Z"
+
+
+      <!-- final rounded triangle onigiri shape; keep the existing triangle animation style -->
+      <path d="M100 72 Q104 72 108 78 L150 142 Q154 150 144 150 L56 150 Q46 150 50 142 L92 78 Q96 72 100 72 Z"
             class="anim-s7-triangle accent" stroke-width="3" />
     </svg>`,
 
@@ -170,10 +180,10 @@ export const stepSvgs = {
   8: `
     <svg class="step-svg" ${COMMON_ATTRS}>
       <!-- finished triangle -->
-      <path d="M100 70 L150 150 L50 150 Z" stroke-width="2.5" />
+      <path d="M100 72 Q104 72 108 78 L150 142 Q154 150 144 150 L56 150 Q46 150 50 142 L92 78 Q96 72 100 72 Z" stroke-width="2.5" />
       <!-- plastic wrap peeling off (animated slide) -->
       <g class="anim-s8-wrap-peel muted">
-        <path d="M100 70 L150 150 L50 150 Z" fill="currentColor" fill-opacity="0.06" stroke-dasharray="4 3" />
+        <path d="M100 72 Q104 72 108 78 L150 142 Q154 150 144 150 L56 150 Q46 150 50 142 L92 78 Q96 72 100 72 Z" fill="currentColor" fill-opacity="0.06" stroke-dasharray="4 3" />
       </g>
     </svg>`,
 
@@ -181,12 +191,12 @@ export const stepSvgs = {
   9: `
     <svg class="step-svg" ${COMMON_ATTRS}>
       <!-- triangle on top -->
-      <path d="M100 60 L150 140 L50 140 Z" stroke-width="2.5" />
+      <path d="M100 62 Q104 62 108 68 L150 132 Q154 140 144 140 L56 140 Q46 140 50 132 L92 68 Q96 62 100 62 Z" stroke-width="2.5" />
       <!-- seaweed rising from bottom (animated) -->
       <g class="anim-s9-nori">
-        <rect x="50" y="120" width="100" height="36" rx="2"
+        <rect x="65" y="120" width="70" height="36" rx="2"
               fill="currentColor" fill-opacity="0.18" stroke="currentColor" stroke-width="2" />
-        <path d="M60 130 h80 M60 140 h80 M60 150 h80" opacity="0.5" />
+        <path d="M72 130 h56 M72 140 h56 M72 150 h56" opacity="0.5" />
       </g>
     </svg>`,
 
@@ -195,7 +205,7 @@ export const stepSvgs = {
     <svg class="step-svg" ${COMMON_ATTRS}>
       <!-- onigiri -->
       <g class="anim-s10-onigiri">
-        <path d="M100 90 L140 150 L60 150 Z" stroke-width="2.5" />
+        <path d="M100 92 Q104 92 108 98 L140 142 Q146 150 136 150 L64 150 Q54 150 60 142 L92 98 Q96 92 100 92 Z" stroke-width="2.5" />
         <rect x="75" y="138" width="50" height="14" fill="currentColor" fill-opacity="0.85" stroke="none" />
         <circle cx="92" cy="115" r="1.8" fill="currentColor" />
         <circle cx="108" cy="110" r="1.8" fill="currentColor" />
