@@ -742,7 +742,7 @@ main#app {
   width: 220px;
   height: 220px;
   background-image:
-    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><g fill='none' stroke='%231C1B18' stroke-width='2.5' stroke-linejoin='round' stroke-linecap='round'><path d='M100 30 L170 160 L30 160 Z'/><rect x='60' y='130' width='80' height='24' fill='%231C1B18' stroke='none'/><circle cx='88' cy='80' r='2.5' fill='%23CC785C' stroke='none'/><circle cx='110' cy='72' r='2.5' fill='%23CC785C' stroke='none'/><circle cx='100' cy='100' r='2.5' fill='%23CC785C' stroke='none'/></g></svg>");
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><g fill='none' stroke='%231C1B18' stroke-width='2.5' stroke-linejoin='round' stroke-linecap='round'><path d='M100 92 Q104 92 108 98 L140 142 Q146 150 136 150 L64 150 Q54 150 60 142 L92 98 Q96 92 100 92 Z'/><rect x='75' y='138' width='50' height='14' fill='%231C1B18' fill-opacity='0.85' stroke='none'/><circle cx='92' cy='115' r='1.8' fill='%231C1B18' stroke='none'/><circle cx='108' cy='110' r='1.8' fill='%231C1B18' stroke='none'/><circle cx='100' cy='125' r='1.8' fill='%231C1B18' stroke='none'/></g></svg>");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
