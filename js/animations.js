@@ -61,12 +61,12 @@ export const stepSvgs = {
     <svg class="step-svg" ${COMMON_ATTRS}>
       <!-- hand outline (openpalm shape, matches tutorial pause gesture) -->
       <g class="muted" opacity="0.4" transform="translate(36 46) scale(4)">
-        <path d="M6 22v-10a2 2 0 0 1 4 0v2v-6a2 2 0 0 1 4 0v6v-8a2 2 0 0 1 4 0v8v-6a2 2 0 0 1 4 0v6v-2a2 2 0 0 1 4 0v10a4 4 0 0 1-4 4h-12a4 4 0 0 1-4-4z" vector-effect="non-scaling-stroke"/>
+        <path d="M6 22v-10a2 2 0 0 1 4 0v2v-6a2 2 0 0 1 4 0v6v-8a2 2 0 0 1 4 0v8v-6a2 2 0 0 1 4 0v6v-2a2 2 0 0 1 4 0v10a4 4 0 0 1-4 4h-12a4 4 0 0 1-4-4z" stroke-width="0.55"/>
       </g>
       <!-- glove (animated, same shape so it lands cleanly on the hand) -->
       <g class="anim-s1-glove accent">
         <g transform="translate(36 46) scale(4)">
-          <path d="M6 22v-10a2 2 0 0 1 4 0v2v-6a2 2 0 0 1 4 0v6v-8a2 2 0 0 1 4 0v8v-6a2 2 0 0 1 4 0v6v-2a2 2 0 0 1 4 0v10a4 4 0 0 1-4 4h-12a4 4 0 0 1-4-4z" vector-effect="non-scaling-stroke"/>
+          <path d="M6 22v-10a2 2 0 0 1 4 0v2v-6a2 2 0 0 1 4 0v6v-8a2 2 0 0 1 4 0v8v-6a2 2 0 0 1 4 0v6v-2a2 2 0 0 1 4 0v10a4 4 0 0 1-4 4h-12a4 4 0 0 1-4-4z" stroke-width="0.55"/>
         </g>
       </g>
     </svg>`,
@@ -77,10 +77,10 @@ export const stepSvgs = {
       <!-- bowl (top view) -->
       <ellipse cx="100" cy="110" rx="60" ry="40" />
       <ellipse cx="100" cy="110" rx="50" ry="33" opacity="0.4" class="muted" />
-      <!-- spoon stirring -->
+      <!-- spoon stirring (head near center, handle extends outward) -->
       <g class="anim-s2-spoon accent">
-        <ellipse cx="135" cy="110" rx="12" ry="8" />
-        <line x1="123" y1="110" x2="100" y2="110" stroke-width="3" />
+        <ellipse cx="118" cy="110" rx="10" ry="7" />
+        <line x1="128" y1="110" x2="168" y2="110" stroke-width="3" />
       </g>
       <!-- mixture swirls -->
       <path d="M80 100 q10 -8 20 0 q10 8 20 0" class="muted" opacity="0.5" />
