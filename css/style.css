@@ -630,12 +630,12 @@ main#app {
 
 /* Step 3 — plastic wrap unrolling */
 .anim-s3-wrap {
-  stroke-dasharray: 220;
-  stroke-dashoffset: 220;
+  stroke-dasharray: 110;
+  stroke-dashoffset: 110;
   animation: s3Draw 2.4s ease-out infinite;
 }
 @keyframes s3Draw {
-  0%   { stroke-dashoffset: 220; }
+  0%   { stroke-dashoffset: 110; }
   60%  { stroke-dashoffset: 0; }
   100% { stroke-dashoffset: 0; opacity: 1; }
 }

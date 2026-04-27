@@ -90,16 +90,16 @@ export const stepSvgs = {
   3: `
     <svg class="step-svg" ${COMMON_ATTRS}>
       <!-- roll on left -->
-      <rect x="20" y="80" width="22" height="50" rx="2" class="muted" opacity="0.5" />
-      <circle cx="31" cy="80" r="11" class="muted" opacity="0.5" />
+      <rect x="20" y="60" width="32" height="80" rx="3" class="muted" opacity="0.5" />
+      <circle cx="36" cy="60" r="16" class="muted" opacity="0.5" />
       <!-- unrolled wrap (animated dash draw) -->
       <g class="accent">
-        <path d="M42 90 h130" class="anim-s3-wrap" stroke-width="2.5" />
-        <path d="M42 120 h130" class="anim-s3-wrap" stroke-width="2.5" />
-        <path d="M172 90 v30" class="anim-s3-wrap" />
+        <path d="M52 75 h100" class="anim-s3-wrap" stroke-width="2.5" />
+        <path d="M52 145 h100" class="anim-s3-wrap" stroke-width="2.5" />
+        <path d="M152 75 v70" class="anim-s3-wrap" />
       </g>
       <!-- sparkles -->
-      <path d="M60 110 l2 -4 l2 4 l4 2 l-4 2 l-2 4 l-2 -4 l-4 -2 z" class="muted" opacity="0.4" />
+      <path d="M95 110 l2.5 -5 l2.5 5 l5 2.5 l-5 2.5 l-2.5 5 l-2.5 -5 l-5 -2.5 z" class="muted" opacity="0.4" />
     </svg>`,
 
   // 4. Place rice and flatten
