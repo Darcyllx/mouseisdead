@@ -59,21 +59,15 @@ export const stepSvgs = {
   // 1. Put on gloves
   1: `
     <svg class="step-svg" ${COMMON_ATTRS}>
-      <!-- hand outline -->
-      <path d="M70 160 v-40
-               q0 -6 5 -6 q5 0 5 6 v15
-               v-45 q0 -7 6 -7 q6 0 6 7 v45
-               v-50 q0 -7 7 -7 q7 0 7 7 v50
-               v-45 q0 -7 6 -7 q6 0 6 7 v45
-               v-35 q0 -6 6 -6 q6 0 6 6 v50
-               q0 18 -18 18 h-18 q-18 0 -18 -18 z" class="muted" opacity="0.4" />
-      <!-- glove (animated) -->
+      <!-- hand outline (openpalm shape, matches tutorial pause gesture) -->
+      <g class="muted" opacity="0.4" transform="translate(36 46) scale(4)">
+        <path d="M6 22v-10a2 2 0 0 1 4 0v2v-6a2 2 0 0 1 4 0v6v-8a2 2 0 0 1 4 0v8v-6a2 2 0 0 1 4 0v6v-2a2 2 0 0 1 4 0v10a4 4 0 0 1-4 4h-12a4 4 0 0 1-4-4z" vector-effect="non-scaling-stroke"/>
+      </g>
+      <!-- glove (animated, same shape so it lands cleanly on the hand) -->
       <g class="anim-s1-glove accent">
-        <path d="M64 110 v55
-                 q0 20 20 20 h22 q20 0 20 -20 v-55
-                 q0 -6 -6 -6 h-50 q-6 0 -6 6 z" />
-        <path d="M70 118 h40" />
-        <path d="M74 128 h32" opacity="0.5" />
+        <g transform="translate(36 46) scale(4)">
+          <path d="M6 22v-10a2 2 0 0 1 4 0v2v-6a2 2 0 0 1 4 0v6v-8a2 2 0 0 1 4 0v8v-6a2 2 0 0 1 4 0v6v-2a2 2 0 0 1 4 0v10a4 4 0 0 1-4 4h-12a4 4 0 0 1-4-4z" vector-effect="non-scaling-stroke"/>
+        </g>
       </g>
     </svg>`,
 
