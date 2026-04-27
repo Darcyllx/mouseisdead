@@ -248,6 +248,13 @@ function wireButtons() {
   $("#startCookingBtn").addEventListener("click", () => {
     setView("ingredients");
   });
+  $$(".tutorial-skip-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      setPaused(false);
+      state.tutorialOpenPalmCount = 0;
+      setView("tutorial-complete");
+    });
+  });
   $("#restartBtn").addEventListener("click", () => {
     state.tutorialIndex = 0;
     state.tutorialOpenPalmCount = 0;
