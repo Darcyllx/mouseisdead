@@ -94,12 +94,12 @@ export const stepSvgs = {
       <circle cx="36" cy="60" r="16" class="muted" opacity="0.5" />
       <!-- unrolled wrap (animated dash draw) -->
       <g class="accent">
-        <path d="M52 75 h100" class="anim-s3-wrap" stroke-width="2.5" />
-        <path d="M52 145 h100" class="anim-s3-wrap" stroke-width="2.5" />
-        <path d="M152 75 v70" class="anim-s3-wrap" />
+        <path d="M52 60 h100" class="anim-s3-wrap" stroke-width="2.5" />
+        <path d="M52 140 h100" class="anim-s3-wrap" stroke-width="2.5" />
+        <path d="M152 60 v80" class="anim-s3-wrap" />
       </g>
       <!-- sparkles -->
-      <path d="M95 110 l2.5 -5 l2.5 5 l5 2.5 l-5 2.5 l-2.5 5 l-2.5 -5 l-5 -2.5 z" class="muted" opacity="0.4" />
+      <path d="M95 100 l2.5 -5 l2.5 5 l5 2.5 l-5 2.5 l-2.5 5 l-2.5 -5 l-5 -2.5 z" class="muted" opacity="0.4" />
     </svg>`,
 
   // 4. Place rice and flatten
@@ -140,7 +140,7 @@ export const stepSvgs = {
     <svg class="step-svg" ${COMMON_ATTRS}>
       <!-- base rice + filling -->
       <ellipse cx="100" cy="135" rx="60" ry="16" class="muted" opacity="0.4" />
-      <path d="M82 128 q0 -12 18 -12 q18 0 18 12 q0 6 -6 10" class="muted" opacity="0.5" />
+      <ellipse cx="100" cy="125" rx="18" ry="11" class="muted" opacity="0.5" />
       <!-- rice falling from top -->
       <g class="anim-s6-rice-top">
         <ellipse cx="86" cy="105" rx="6" ry="4" />
