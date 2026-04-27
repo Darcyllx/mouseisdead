@@ -108,6 +108,14 @@ p { margin: 0; }
 }
 .btn-secondary:hover { background: var(--bg-sunken); }
 
+.tutorial-skip-btn {
+  align-self: center;
+  margin-top: 4px;
+  padding: 10px 22px;
+  min-height: 40px;
+  font-size: 0.9375rem;
+}
+
 /* ================================================================
    Boot / permission screen
    ================================================================ */
