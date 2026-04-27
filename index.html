@@ -165,7 +165,10 @@
         <ul class="ingredients-list" id="ingredientsList"></ul>
       </div>
       <div class="view__footer">
-        <p class="eyebrow">Before you begin</p>
+        <div class="recipe-header">
+          <p class="eyebrow">Before you begin</p>
+          <button type="button" class="btn btn-secondary recipe-ready-btn" id="readyBtn">I'm ready</button>
+        </div>
         <h2>Check you have everything</h2>
         <p class="lede">When you're ready, give a thumbs up to start step 1.</p>
         <div class="tutorial-status" data-tutorial-status="thumbsup">
@@ -179,7 +182,10 @@
     <section data-view="step" class="view view--recipe">
       <div class="view__illustration" id="stepAnimation"></div>
       <div class="view__footer">
-        <p class="eyebrow" id="stepEyebrow">Step 1 of 10</p>
+        <div class="step-header">
+          <p class="eyebrow" id="stepEyebrow">Step 1 of 10</p>
+          <button type="button" class="btn btn-secondary step-next-btn" id="nextStepBtn">Next step</button>
+        </div>
         <h2 id="stepText">—</h2>
         <div class="progress-dots" id="stepProgress"></div>
         <p class="step-hint" id="stepHint">Swipe right for next · Swipe left to go back</p>
@@ -189,6 +195,22 @@
     <!-- ========== COMPLETED ========== -->
     <section data-view="completed" class="view view--recipe">
       <div class="view__illustration">
+        <div class="confetti" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <div class="onigiri-hero"></div>
       </div>
       <div class="view__footer">

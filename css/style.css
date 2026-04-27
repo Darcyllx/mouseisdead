@@ -108,16 +108,22 @@ p { margin: 0; }
 }
 .btn-secondary:hover { background: var(--bg-sunken); }
 
-.tutorial-header {
+.tutorial-header,
+.step-header,
+.recipe-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 12px;
 }
-.tutorial-header .eyebrow {
+.tutorial-header .eyebrow,
+.step-header .eyebrow,
+.recipe-header .eyebrow {
   margin-bottom: 0;
 }
-.tutorial-skip-btn {
+.tutorial-skip-btn,
+.step-next-btn,
+.recipe-ready-btn {
   padding: 8px 16px;
   min-height: 34px;
   font-size: 0.8125rem;
@@ -378,6 +384,45 @@ main#app {
   flex-direction: column;
   gap: 12px;
   padding: 16px 8px;
+  max-width: 640px;
+}
+
+.view--tutorial .view__footer {
+  width: 100%;
+  max-width: none;
+}
+
+.view--tutorial .tutorial-header {
+  margin-inline: -8px;
+}
+
+.view--tutorial .view__footer > :not(.tutorial-header) {
+  max-width: 640px;
+}
+
+section[data-view="step"] .view__footer {
+  width: 100%;
+  max-width: none;
+}
+
+section[data-view="step"] .step-header {
+  margin-inline: -8px;
+}
+
+section[data-view="step"] .view__footer > :not(.step-header) {
+  max-width: 640px;
+}
+
+section[data-view="ingredients"] .view__footer {
+  width: 100%;
+  max-width: none;
+}
+
+section[data-view="ingredients"] .recipe-header {
+  margin-inline: -8px;
+}
+
+section[data-view="ingredients"] .view__footer > :not(.recipe-header) {
   max-width: 640px;
 }
 
@@ -764,6 +809,44 @@ main#app {
 }
 .onigiri-hero--small { width: 140px; height: 140px; }
 
+.confetti {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.confetti span {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  width: 7px;
+  height: 18px;
+  border-radius: 2px;
+  background: var(--accent);
+  opacity: 0;
+  animation: confettiFall 3.2s ease-out forwards;
+}
+.confetti span:nth-child(1) { left: 18%; background: var(--accent); animation-delay: 0.05s; --tx: -34px; --rot: -160deg; }
+.confetti span:nth-child(2) { left: 28%; background: var(--success); animation-delay: 0.16s; --tx: 20px; --rot: 125deg; }
+.confetti span:nth-child(3) { left: 39%; background: var(--ink-faint); animation-delay: 0s; --tx: -14px; --rot: 190deg; }
+.confetti span:nth-child(4) { left: 50%; background: var(--accent-soft); animation-delay: 0.12s; --tx: 24px; --rot: -110deg; }
+.confetti span:nth-child(5) { left: 61%; background: var(--success); animation-delay: 0.22s; --tx: -20px; --rot: 145deg; }
+.confetti span:nth-child(6) { left: 72%; background: var(--accent); animation-delay: 0.08s; --tx: 32px; --rot: -175deg; }
+.confetti span:nth-child(7) { left: 24%; background: var(--accent-soft); animation-delay: 0.38s; --tx: 12px; --rot: 105deg; }
+.confetti span:nth-child(8) { left: 78%; background: var(--ink-faint); animation-delay: 0.32s; --tx: -16px; --rot: -90deg; }
+.confetti span:nth-child(9) { left: 34%; background: var(--accent); animation-delay: 0.55s; --tx: -28px; --rot: -210deg; }
+.confetti span:nth-child(10) { left: 44%; background: var(--success); animation-delay: 0.7s; --tx: 18px; --rot: 160deg; }
+.confetti span:nth-child(11) { left: 55%; background: var(--ink-faint); animation-delay: 0.48s; --tx: -10px; --rot: -150deg; }
+.confetti span:nth-child(12) { left: 66%; background: var(--accent-soft); animation-delay: 0.64s; --tx: 28px; --rot: 130deg; }
+.confetti span:nth-child(13) { left: 83%; background: var(--success); animation-delay: 0.46s; --tx: -24px; --rot: -120deg; }
+.confetti span:nth-child(14) { left: 14%; background: var(--ink-faint); animation-delay: 0.78s; --tx: 26px; --rot: 180deg; }
+@keyframes confettiFall {
+  0% { transform: translate3d(0, -24px, 0) rotate(0); opacity: 0; }
+  12% { opacity: 0.9; }
+  72% { opacity: 0.75; }
+  100% { transform: translate3d(var(--tx), 210px, 0) rotate(var(--rot)); opacity: 0; }
+}
+
 /* ================================================================
    Celebration checkmark (tutorial-complete)
    ================================================================ */
@@ -797,4 +880,7 @@ main#app {
   .view--recipe, .view--tutorial { gap: 12px; padding: 16px 16px 24px; }
   .view__illustration { padding: 20px; }
   .view__footer { padding: 4px; gap: 8px; }
+  .view--tutorial .tutorial-header { margin-inline: -4px; }
+  section[data-view="step"] .step-header { margin-inline: -4px; }
+  section[data-view="ingredients"] .recipe-header { margin-inline: -4px; }
 }

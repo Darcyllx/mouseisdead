@@ -178,14 +178,19 @@ function handleThumbsUp() {
   if (v === "tutorial-thumbsup") {
     advanceTutorial(tutorialSteps[state.tutorialIndex].success);
   } else if (v === "ingredients") {
-    setView("step");
-    renderStep(0);
+    startRecipeSteps();
   } else if (v === "step" && state.currentStep === steps.length - 1) {
     setView("completed");
   } else if (v === "completed") {
     setView("finish");
     $("#cameraPreview").classList.remove("visible");
   }
+}
+
+function startRecipeSteps() {
+  if (state.paused) return;
+  setView("step");
+  renderStep(0);
 }
 
 function handleSwipeLeft() {
@@ -197,6 +202,11 @@ function handleSwipeLeft() {
   } else if (v === "step" && state.currentStep === steps.length - 1) {
     setView("completed");
   }
+}
+
+function handleNextStepClick() {
+  if (state.paused || state.view !== "step") return;
+  handleSwipeLeft();
 }
 
 function handleSwipeRight() {
@@ -255,6 +265,8 @@ function wireButtons() {
       setView("tutorial-complete");
     });
   });
+  $("#readyBtn").addEventListener("click", startRecipeSteps);
+  $("#nextStepBtn").addEventListener("click", handleNextStepClick);
   $("#restartBtn").addEventListener("click", () => {
     state.tutorialIndex = 0;
     state.tutorialOpenPalmCount = 0;
