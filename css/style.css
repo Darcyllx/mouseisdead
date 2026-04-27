@@ -108,12 +108,19 @@ p { margin: 0; }
 }
 .btn-secondary:hover { background: var(--bg-sunken); }
 
+.tutorial-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.tutorial-header .eyebrow {
+  margin-bottom: 0;
+}
 .tutorial-skip-btn {
-  align-self: center;
-  margin-top: 4px;
-  padding: 10px 22px;
-  min-height: 40px;
-  font-size: 0.9375rem;
+  padding: 8px 16px;
+  min-height: 34px;
+  font-size: 0.8125rem;
 }
 
 /* ================================================================
