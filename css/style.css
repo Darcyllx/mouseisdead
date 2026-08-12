@@ -129,6 +129,25 @@ p { margin: 0; }
   font-size: 0.8125rem;
 }
 
+.view--tutorial .tutorial-skip-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  z-index: 2;
+}
+@media (min-width: 900px) {
+  .view--tutorial .tutorial-skip-btn {
+    top: 40px;
+    right: 40px;
+  }
+}
+@media (max-width: 520px) {
+  .view--tutorial .tutorial-skip-btn {
+    top: 16px;
+    right: 16px;
+  }
+}
+
 /* ================================================================
    Boot / permission screen
    ================================================================ */
@@ -365,6 +384,7 @@ main#app {
   margin: 0 auto;
   gap: 16px;
   padding: 24px 24px 32px;
+  position: relative;
 }
 
 .view__illustration {
